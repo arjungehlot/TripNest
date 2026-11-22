@@ -52,3 +52,4 @@ body { @apply overflow-x-clip bg-white font-sans text-navy antialiased; }
   .reveal { opacity: 1; }
 }
 @keyframes fadein { from { opacity: 0 } to { opacity: 1 } }
+@keyframes pop { from { opacity: 0; transform: translateY(20px) scale(.97) } to { opacity: 1; transform: none } }

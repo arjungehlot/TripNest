@@ -27,7 +27,7 @@ export default function Footer() {
       <div className="relative mx-auto max-w-7xl px-5 pb-8 pt-24 sm:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.3fr]">
           <div>
-            <Logo light />
+            <Logo plate className="h-12" />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">
               One platform for flights, stays and unforgettable adventures. We serve individual travellers and travel businesses across Thailand and beyond.
             </p>
@@ -74,8 +74,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} TripNest Travel Tech Company Limited. All rights reserved.</p>
-          <p className="flex gap-5"><a href="#/" className="hover:text-white">Privacy</a><a href="#/" className="hover:text-white">Terms</a><a href="#/" className="hover:text-white">Cookies</a></p>
+          <p className="text-center sm:text-left">© {new Date().getFullYear()} TripNest Travel Tech Company Limited. All rights reserved.<br className="hidden sm:block" /> <span className="text-white/40">Photos: Wikimedia Commons contributors (CC licences) and TripNest.</span></p>
+          <p className="flex gap-5"><Link to="/" className="hover:text-white">Privacy</Link><Link to="/" className="hover:text-white">Terms</Link><Link to="/" className="hover:text-white">Cookies</Link></p>
         </div>
       </div>
     </footer>

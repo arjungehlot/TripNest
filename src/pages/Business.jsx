@@ -3,6 +3,9 @@ import { LuArrowRight, LuCheck, LuCode, LuLayers, LuBadgePercent, LuChartColumn,
 import { Link } from "../router.jsx";
 import { Reveal, Counter } from "../hooks.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
+import Photo from "../components/Photo.jsx";
+import { IMG } from "../images.js";
+import { useQuote } from "../quote.jsx";
 
 const FEATURES = [
   { icon: LuBadgePercent, t: "Net wholesale rates", d: "Unlock partner-only pricing on every service and set your own margin." },
@@ -22,9 +25,9 @@ export default function Business() {
   const [sent, setSent] = useState(false);
   return (
     <>
-      <section className="relative overflow-hidden bg-navy pb-24 pt-36 text-white">
-        <div className="animate-spin-slow absolute -right-40 -top-40 h-[34rem] w-[34rem] rounded-full border-[48px] border-teal/20" />
-        <div className="absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-teal/25 blur-3xl" />
+      <section className="relative isolate overflow-hidden pb-24 pt-40 text-white">
+        <Photo src={IMG.pattaya} alt="" className="absolute inset-0 -z-20" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy via-navy/90 to-navy/70" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[1.2fr_.8fr]">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest"><LuHandshake /> TripNest for Business · B2B</span>
